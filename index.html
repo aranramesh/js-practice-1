@@ -1,152 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        th{
-            text-transform: uppercase;
-            border: 2px solid lightgrey;
-    padding: 3px;
-
-        }
-        td{
-            text-align: center;
-            border: 2px solid lightgrey;
-    padding: 3px;
-
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Javascript Project - To Do list</title>
+  <!-- using font awesome for icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <!-- using google font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+  <!-- importing reset and main css -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <table class="table" style="border: 2px solid lightgrey; width: 700px;" >
-   <tr>
-    <th>s.no</th>
-    <th>products</th>
-    <th>quatity</th>
-    <th>unit prize</th>
-    <th>prize</th>
-   </tr>
-   <tr>
-    <td>1</td>
-    <td>LENOVO AMD LEGION</td>
-    <td><select name="" id="select">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="3">4</option>
-        <option value="3">5</option>
-        <option value="3">6</option>
-        <option value="3">7</option>
-        <option value="3">8</option>
-    </select></td>
-    <td id="price-1">85000</td>
-    <td id="totprice-1"></td>
-   </tr>
-
-   <tr>
-    <td>2</td>
-    <td>ASUS TUF GAMING</td>
-    <td><select name="" id="select">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="3">4</option>
-        <option value="3">5</option>
-        <option value="3">6</option>
-        <option value="3">7</option>
-        <option value="3">8</option>
-    </select></td>
-    <td id="price-2">95000</td>
-    <td id="totprice-2"></td>
-</tr>
-
-   <tr>
-    <td>3</td>
-    <td>BOAT AVANTE BAR-2000</td>
-    <td><select name="" id="select">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="3">4</option>
-        <option value="3">5</option>
-        <option value="3">6</option>
-        <option value="3">7</option>
-        <option value="3">8</option>
-    </select></td>
-    <td id="price-3">85000</td>
-    <td id="totprice-3"></td>
-</tr>
-
-
-<tr>
-    <td>4</td>
-    <td>GTX 3080</td>
-    <td><select name="" id="select">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="3">4</option>
-        <option value="3">5</option>
-        <option value="3">6</option>
-        <option value="3">7</option>
-        <option value="3">8</option>
-    </select></td>
-    <td id="price-4">110000</td>
-    <td id="totprice-4"></td>
-</tr>
-
-<tr>
-    <td>5</td>
-    <td>SONY JUKEBAR </td>
-    <td><select name="" id="select">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="3">4</option>
-        <option value="3">5</option>
-        <option value="3">6</option>
-        <option value="3">7</option>
-        <option value="3">8</option>
-    </select></td>
-    <td id="price-5">15000</td>
-    <td id="totprice-5"></td>
-</tr>
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>TOTAL</td>
-    <td></td>
-</tr>
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>TAX 18%</td>
-    <td></td>
-    
-</tr>
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>TOTAL AMOUNT</td>
-    <td></td>
-</tr>
-    </table>
-
-
-    <script>
-  
-     let amdprice =document.getElementById("price-1");
-     let amdquantity = document.getElementById("select");
-     let amdtotalprize = document.getElementById("totprice-1");
-
-     let out =  
-
-    </script>
+  <div class="container">
+    <div class="todoBlock">
+      <!-- main title holder -->
+      <div class="titleHolder">
+        <h1>To Do List</h1>
+      </div>
+      <!-- todo list -->
+      <div class="todoList">
+        <!-- list holder -->
+        <div class="listHolder">
+          <ul class="list">
+            <li>
+              <span class="listName">Macbook</span>
+              <!-- 
+              <button class="btn-icon remove"></button>
+              <button class="btn-icon down"></button>
+              <button class="btn-icon up"></button>
+              -->
+            </li>
+            <li>
+              <span class="listName">Amazon Firestick</span>
+            </li>
+            <li>
+              <span class="listName">Keyboard</span>
+            </li>
+            <li>
+              <span class="listName">Headphones</span>
+            </li>
+            <li>
+              <span class="listName">Airpods</span>
+            </li>
+          </ul>
+        </div>
+        <!-- form holder -->
+        <div class="formHolder">
+          <div class="col big">
+            <input type="text" id="addInput">
+          </div>
+          <div class="col">
+            <button type="button" id="addBtn" class="btn-primary">Add Item</button>
+          </div>
+          <div class="col">
+            <button type="button" id="toggleBtn" class="btn-primary">Hide List</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- importing custom js -->
+  <script src="css/script.js"></script>
 </body>
+
 </html>
